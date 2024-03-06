@@ -1,0 +1,14 @@
+<mat-form-field [color]="colorinp">
+    <mat-label>{{title}}</mat-label>
+    <input matInput
+    
+    >
+</mat-form-field>
+
+
+        matInput
+        [placeholder]="docente.contrasenia_docente"
+        id="contrasenia_docente"
+        [formControl]="docenteForm.controls['contrasenia_docente']"
+        required
+        [type]="hide ? 'password' : 'text'"

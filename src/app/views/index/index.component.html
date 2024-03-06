@@ -1,0 +1,18 @@
+<h1>Hola {{estudiante.nombres_alumno }} {{estudiante.apellidos_alumno}} </h1>
+<!-- En una etiqueta h3 mostrar en que jornada me encuentro -->
+<h3>Hola soy {{estudiante.nombres_alumno}} de la jornada {{estudiante.jornada.nombre_jornada}}</h3>
+<h5>Hola soy {{estudiante.nombres_alumno}} {{estudiante.apellidos_alumno}} de la carrera de
+    {{estudiante.carrera.nombre_carrera}} mi profe es {{horario.docente.nombres_docente}}
+    {{horario.docente.apellidos_docente}} de la rama {{horario.docente.rama.nombre_rama}}</h5>
+<!-- En el titulo principal colocar la asignatura y profesor q dicta la asignatura, en el siguiqnete titulo poner el aula y q tipo de aula {:else}
+  en el texto largo poner todos los datos del estudiante y en los botones poner departamento o facultad q pertenece y el otro la rama -->
+<hr>
+<div>
+    <!-- <app-botonsimple [titulo]="horario.docente.rama.nombre_rama" [titulo2]="colorbtn"></app-botonsimple> -->
+    <app-botonsimple></app-botonsimple>
+    <app-emailinput [title]="horario.docente.email_docente"></app-emailinput>
+    <app-datepickerinput [title]="estudiante.nombres_alumno"></app-datepickerinput>
+    <app-alerta1></app-alerta1>
+    <app-selectinput></app-selectinput>
+    <app-formlogin></app-formlogin> 
+</div>
