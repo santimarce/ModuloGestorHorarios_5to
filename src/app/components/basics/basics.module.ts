@@ -6,7 +6,7 @@ import { EmailinputComponent } from './emailinput/emailinput.component';
 import { SelectinputComponent } from './selectinput/selectinput.component';
 import { MatSelectModule } from '@angular/material/select';
 import { MatInputModule } from '@angular/material/input';
-import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatFormFieldControl, MatFormFieldModule } from '@angular/material/form-field';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatButtonModule } from '@angular/material/button';
@@ -32,7 +32,7 @@ import { TextoinputComponent } from './textoinput/textoinput.component';
     MatButtonModule,
     MatDividerModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
   ],
   exports: [
     TextoinputComponent,
