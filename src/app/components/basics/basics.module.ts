@@ -13,6 +13,8 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatIconModule } from '@angular/material/icon';
 import { TextoinputComponent } from './textoinput/textoinput.component';
+import { GrillaComponent } from './grilla/grilla.component';
+import {MatGridListModule} from '@angular/material/grid-list';
 
 
 @NgModule({
@@ -21,7 +23,8 @@ import { TextoinputComponent } from './textoinput/textoinput.component';
     DatepickerinputComponent,
     EmailinputComponent,
     SelectinputComponent,
-    TextoinputComponent],
+    TextoinputComponent,
+    GrillaComponent],
   imports: [
     CommonModule,
     MatFormFieldModule,
@@ -33,13 +36,16 @@ import { TextoinputComponent } from './textoinput/textoinput.component';
     MatDividerModule,
     FormsModule,
     ReactiveFormsModule,
+    MatGridListModule
   ],
   exports: [
     TextoinputComponent,
     BotonsimpleComponent,
     DatepickerinputComponent,
     EmailinputComponent,
-    SelectinputComponent
+    SelectinputComponent,
+    GrillaComponent
+
   ]
 })
 export class BasicsModule { }
