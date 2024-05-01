@@ -5,7 +5,7 @@ import { FormloginComponent } from './components/forms/formlogin/formlogin.compo
 import { FormregisterComponent } from './components/forms/formregister/formregister.component';
 
 const routes: Routes = [
-  { path: 'index', component: FormregisterComponent },
+  { path: 'index', component: IndexComponent },
   { path: '', redirectTo: '/index', pathMatch: 'full' }
 ];
 
