@@ -14,11 +14,12 @@ import { Student } from '../../../models/studentmodel';
   
 export class IndexComponent {
 
-  title = 'HorariosAng17';
+  title = 'Gestión de Horarios';
   estudiante = student1;
   jornada = jornadaVespertina;
   horario = horariomatutino1;
   colorbtn = 'primary';
+  title_button = 'Iniciar Sesion';
 
 }
 
