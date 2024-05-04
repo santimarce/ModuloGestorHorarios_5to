@@ -1,6 +1,8 @@
 import { Component, Input } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
+import { TranferenciacomponentesService } from '../../../servicios/tranferenciacomponentes.service';
+
 
 @Component({
   selector: 'app-formlogin',
@@ -12,6 +14,12 @@ export class FormloginComponent {
     title: 'hola',
     mail: '',
     password: ''
+  }
+  constructor(private tranferencia: TranferenciacomponentesService){}
+  datosParaCompartir: any;
+  ngOnInit() {
+    // Establecer los datos compartidos en el servicio
+    this.tranferencia.setDatosCompartidos(this.datosParaCompartir);
   }
   formlog: FormGroup = new FormGroup({
     mail: new FormControl('', Validators.required),

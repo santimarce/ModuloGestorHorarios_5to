@@ -1,13 +1,15 @@
 /* styles.css o styles.scss */
 
 .container {
-    width: 600px;
-    height: 600px;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
+  width: 80%; /* Ancho del contenedor al 80% del ancho del viewport */
+  height: auto; /* Altura se ajustará automáticamente al contenido */
+  max-width: 600px; /* Ancho máximo del contenedor de 600px */
+  position: absolute; /* Cambiado a posición absoluta */
+  top: 10%; /* Distancia del 10% del borde superior del viewport */
+  left: 50%; /* Distancia de la mitad del ancho del viewport */
+  transform: translateX(-50%); /* Centrado horizontal */
+}
+
   
   /* Estilos adicionales para la imagen */
   .vista {
