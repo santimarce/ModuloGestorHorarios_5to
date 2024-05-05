@@ -17,7 +17,9 @@ import { GrillaComponent } from './grilla/grilla.component';
 import {MatGridListModule} from '@angular/material/grid-list';
 import { NavbarComponent } from './navbar/navbar.component';
 import {MatTabsModule} from '@angular/material/tabs';
-
+import {MatSidenavModule} from '@angular/material/sidenav';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatListModule } from '@angular/material/list';
 
 
 @NgModule({
@@ -41,7 +43,10 @@ import {MatTabsModule} from '@angular/material/tabs';
     FormsModule,
     ReactiveFormsModule,
     MatGridListModule,
-    MatTabsModule
+    MatTabsModule,
+    MatSidenavModule,
+    MatToolbarModule,
+    MatListModule
   ],
   exports: [
     TextoinputComponent,
