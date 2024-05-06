@@ -1,5 +1,7 @@
-import {Component, Input} from '@angular/core';
-import {MatSidenavModule} from '@angular/material/sidenav';
+import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
+import {Component, inject, Input} from '@angular/core';
+import { map, Observable, shareReplay } from 'rxjs';
+
 
 
 /**
@@ -15,5 +17,17 @@ import {MatSidenavModule} from '@angular/material/sidenav';
 export class NavbarComponent {
   @Input() navItems!: string[]; // Array de cadenas para los elementos del navbar
   @Input() navbarColor!: string; // Color del navbar
-  shouldRun = /(^|.)(stackblitz|webcontainer).(io|com)$/.test(window.location.host);
+  @Input() navbarRoutes!: string[]; 
+  title = 'Sistema de Gestión de Horarios ITS YAVIRAC';
+  condition: string = "default"; 
+  changeCondition(name:string) {
+    this.condition = name;
+  }
+  private breakpointObserver = inject(BreakpointObserver);
+
+  isHandset$: Observable<boolean> = this.breakpointObserver.observe(Breakpoints.Handset)
+    .pipe(
+      map(result => result.matches),
+      shareReplay()
+    );
 }

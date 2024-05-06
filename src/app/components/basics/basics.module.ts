@@ -17,7 +17,9 @@ import { GrillaComponent } from './grilla/grilla.component';
 import {MatGridListModule} from '@angular/material/grid-list';
 import { NavbarComponent } from './navbar/navbar.component';
 import {MatTabsModule} from '@angular/material/tabs';
-
+import {MatSidenavModule} from '@angular/material/sidenav';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatListModule } from '@angular/material/list';
 
 
 @NgModule({
@@ -27,8 +29,7 @@ import {MatTabsModule} from '@angular/material/tabs';
     EmailinputComponent,
     SelectinputComponent,
     TextoinputComponent,
-    GrillaComponent,
-    NavbarComponent],
+    GrillaComponent],
   imports: [
     CommonModule,
     MatFormFieldModule,
@@ -40,8 +41,7 @@ import {MatTabsModule} from '@angular/material/tabs';
     MatDividerModule,
     FormsModule,
     ReactiveFormsModule,
-    MatGridListModule,
-    MatTabsModule
+    MatGridListModule
   ],
   exports: [
     TextoinputComponent,
@@ -49,9 +49,10 @@ import {MatTabsModule} from '@angular/material/tabs';
     DatepickerinputComponent,
     EmailinputComponent,
     SelectinputComponent,
-    GrillaComponent,
-    NavbarComponent
+    GrillaComponent
 
   ]
+
+
 })
 export class BasicsModule { }
