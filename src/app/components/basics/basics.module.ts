@@ -15,7 +15,8 @@ import { MatIconModule } from '@angular/material/icon';
 import { TextoinputComponent } from './textoinput/textoinput.component';
 import { GrillaComponent } from './grilla/grilla.component';
 import {MatGridListModule} from '@angular/material/grid-list';
-
+import { CheckboxComponent } from './checkbox/checkbox.component';
+import { MatCheckboxModule } from '@angular/material/checkbox';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import {MatGridListModule} from '@angular/material/grid-list';
     EmailinputComponent,
     SelectinputComponent,
     TextoinputComponent,
-    GrillaComponent],
+    GrillaComponent,
+    CheckboxComponent],
   imports: [
     CommonModule,
     MatFormFieldModule,
@@ -36,7 +38,8 @@ import {MatGridListModule} from '@angular/material/grid-list';
     MatDividerModule,
     FormsModule,
     ReactiveFormsModule,
-    MatGridListModule
+    MatGridListModule,
+    MatCheckboxModule
   ],
   exports: [
     TextoinputComponent,
@@ -44,8 +47,11 @@ import {MatGridListModule} from '@angular/material/grid-list';
     DatepickerinputComponent,
     EmailinputComponent,
     SelectinputComponent,
-    GrillaComponent
+    GrillaComponent,
+    CheckboxComponent
 
   ]
+
+
 })
 export class BasicsModule { }
