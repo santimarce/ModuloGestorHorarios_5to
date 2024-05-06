@@ -15,8 +15,12 @@ import { MatIconModule } from '@angular/material/icon';
 import { TextoinputComponent } from './textoinput/textoinput.component';
 import { GrillaComponent } from './grilla/grilla.component';
 import {MatGridListModule} from '@angular/material/grid-list';
-import { CheckboxComponent } from './checkbox/checkbox.component';
-import { MatCheckboxModule } from '@angular/material/checkbox';
+import { NavbarComponent } from './navbar/navbar.component';
+import {MatTabsModule} from '@angular/material/tabs';
+import {MatSidenavModule} from '@angular/material/sidenav';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatListModule } from '@angular/material/list';
+
 
 @NgModule({
   declarations: [
@@ -25,8 +29,7 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
     EmailinputComponent,
     SelectinputComponent,
     TextoinputComponent,
-    GrillaComponent,
-    CheckboxComponent],
+    GrillaComponent],
   imports: [
     CommonModule,
     MatFormFieldModule,
@@ -38,8 +41,7 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
     MatDividerModule,
     FormsModule,
     ReactiveFormsModule,
-    MatGridListModule,
-    MatCheckboxModule
+    MatGridListModule
   ],
   exports: [
     TextoinputComponent,
@@ -47,8 +49,7 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
     DatepickerinputComponent,
     EmailinputComponent,
     SelectinputComponent,
-    GrillaComponent,
-    CheckboxComponent
+    GrillaComponent
 
   ]
 
