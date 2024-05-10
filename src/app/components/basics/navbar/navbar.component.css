@@ -6,3 +6,8 @@
   right: 0;
   background: #eee;
 }
+
+ .logo-img img {
+  width: 100px; /* Ajusta el ancho deseado */
+  height: auto; /* Ajusta la altura proporcionalmente */
+}
