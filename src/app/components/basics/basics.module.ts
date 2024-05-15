@@ -14,13 +14,13 @@ import { MatDividerModule } from '@angular/material/divider';
 import { MatIconModule } from '@angular/material/icon';
 import { TextoinputComponent } from './textoinput/textoinput.component';
 import { GrillaComponent } from './grilla/grilla.component';
-import {MatGridListModule} from '@angular/material/grid-list';
-import { NavbarComponent } from './navbar/navbar.component';
-import {MatTabsModule} from '@angular/material/tabs';
-import {MatSidenavModule} from '@angular/material/sidenav';
+import { MatGridListModule } from '@angular/material/grid-list';
+import { MatTabsModule } from '@angular/material/tabs';
+import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatListModule } from '@angular/material/list';
-
+import { NavbarComponent } from './navbar/navbar.component';
+import { CheckboxComponent } from './checkbox/checkbox.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +29,10 @@ import { MatListModule } from '@angular/material/list';
     EmailinputComponent,
     SelectinputComponent,
     TextoinputComponent,
-    GrillaComponent],
+    GrillaComponent,
+    NavbarComponent,
+    CheckboxComponent
+  ],
   imports: [
     CommonModule,
     MatFormFieldModule,
@@ -41,7 +44,11 @@ import { MatListModule } from '@angular/material/list';
     MatDividerModule,
     FormsModule,
     ReactiveFormsModule,
-    MatGridListModule
+    MatGridListModule,
+    MatTabsModule,
+    MatToolbarModule,
+    MatListModule,
+    MatSidenavModule
   ],
   exports: [
     TextoinputComponent,
@@ -49,10 +56,9 @@ import { MatListModule } from '@angular/material/list';
     DatepickerinputComponent,
     EmailinputComponent,
     SelectinputComponent,
-    GrillaComponent
-
+    GrillaComponent,
+    NavbarComponent,
+    CheckboxComponent
   ]
-
-
 })
 export class BasicsModule { }

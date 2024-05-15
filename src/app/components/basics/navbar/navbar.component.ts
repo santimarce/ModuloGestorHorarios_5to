@@ -3,7 +3,6 @@ import {Component, inject, Input} from '@angular/core';
 import { map, Observable, shareReplay } from 'rxjs';
 
 
-
 /**
  * @title Tab group with aligned labels
  */
