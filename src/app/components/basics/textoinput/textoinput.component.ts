@@ -10,7 +10,7 @@ import { TranferenciacomponentesService } from '../../../servicios/tranferenciac
 export class TextoinputComponent {
   @Input() title!: string;
   @Input() colorinp!: ThemePalette;
-
+  
   datosRecibidos: any; // Almacena los datos recibidos del servicio
 
   constructor(private tranferencia: TranferenciacomponentesService) { }

@@ -29,8 +29,7 @@ import { MatListModule } from '@angular/material/list';
     EmailinputComponent,
     SelectinputComponent,
     TextoinputComponent,
-    GrillaComponent,
-    NavbarComponent],
+    GrillaComponent],
   imports: [
     CommonModule,
     MatFormFieldModule,
@@ -43,10 +42,6 @@ import { MatListModule } from '@angular/material/list';
     FormsModule,
     ReactiveFormsModule,
     MatGridListModule,
-    MatTabsModule,
-    MatSidenavModule,
-    MatToolbarModule,
-    MatListModule,
     
   ],
   exports: [
@@ -55,9 +50,10 @@ import { MatListModule } from '@angular/material/list';
     DatepickerinputComponent,
     EmailinputComponent,
     SelectinputComponent,
-    GrillaComponent,
-    NavbarComponent
+    GrillaComponent
 
   ]
+
+
 })
 export class BasicsModule { }
