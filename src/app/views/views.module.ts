@@ -5,6 +5,8 @@ import { MatCardModule } from '@angular/material/card';
 import { ComponentsModule } from "../components/components.module";
 import { DashboardteacherComponent } from './dashboardteacher/dashboardteacher.component';
 import { DashboardstudentComponent } from './dashboardstudent/dashboardstudent.component';
+import { MatIcon } from '@angular/material/icon';
+
 
 
 @NgModule({
@@ -16,7 +18,8 @@ import { DashboardstudentComponent } from './dashboardstudent/dashboardstudent.c
   imports: [
     CommonModule,
     MatCardModule,
-    ComponentsModule
+    ComponentsModule,
+    MatIcon
   ],
   exports: [IndexComponent],
 })

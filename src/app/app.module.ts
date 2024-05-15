@@ -1,11 +1,14 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule, provideClientHydration } from '@angular/platform-browser';
+import { BrowserModule } from '@angular/platform-browser';
+import { MatIconModule } from '@angular/material/icon';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { provideClientHydration } from '@angular/platform-browser';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { ComponentsModule } from './components/components.module';
 import { ViewsModule } from './views/views.module';
+
 
 @NgModule({
   declarations: [
@@ -15,11 +18,13 @@ import { ViewsModule } from './views/views.module';
     BrowserModule,
     AppRoutingModule,
     ViewsModule,
-    ComponentsModule
+    ComponentsModule,
+    MatIconModule // Agrega esta línea para importar MatIconModule
   ],
   providers: [
     provideClientHydration(),
-    provideAnimationsAsync('noop')
+    provideAnimationsAsync('noop'),
+    provideAnimationsAsync()
   ],
   bootstrap: [AppComponent]
 })

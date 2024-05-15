@@ -46,7 +46,8 @@ import { MatListModule } from '@angular/material/list';
     MatTabsModule,
     MatSidenavModule,
     MatToolbarModule,
-    MatListModule
+    MatListModule,
+    
   ],
   exports: [
     TextoinputComponent,

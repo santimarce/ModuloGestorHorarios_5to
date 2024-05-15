@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ElementoListaNavbar } from '../../../models/drawclass';
 
 @Component({
   selector: 'app-dashboardteacher',
@@ -6,6 +7,19 @@ import { Component } from '@angular/core';
   styleUrls: ['./dashboardteacher.component.css']
 })
 export class DashboardteacherComponent {
-  nombre = ['Docentes', 'Agregar Estudiante', 'Modificar Horarios'];
-
+  
+   elementosnavbar: ElementoListaNavbar[] = [
+    {
+      nombre: "Docente",
+      nombre_icono: "person"
+    },
+    {
+      nombre: "Agregar Estudiante",
+      nombre_icono: "person_add"
+    },
+    {
+      nombre: "Modificar Horarios",
+      nombre_icono: "calendar_today"
+    }
+   ]
 }
