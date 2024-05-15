@@ -48,7 +48,8 @@ import { CheckboxComponent } from './checkbox/checkbox.component';
     MatTabsModule,
     MatToolbarModule,
     MatListModule,
-    MatSidenavModule
+    MatSidenavModule,
+    
   ],
   exports: [
     TextoinputComponent,

@@ -4,17 +4,22 @@ import { IndexComponent } from './index/index.component';
 import { MatCardModule } from '@angular/material/card';
 import { ComponentsModule } from "../components/components.module";
 import { DashboardteacherComponent } from './dashboardteacher/dashboardteacher.component';
+import { DashboardstudentComponent } from './dashboardstudent/dashboardstudent.component';
+import { MatIcon } from '@angular/material/icon';
+
 
 
 @NgModule({
   declarations: [
     IndexComponent,
-    DashboardteacherComponent
+    DashboardteacherComponent,
+    DashboardstudentComponent
   ],
   imports: [
     CommonModule,
     MatCardModule,
-    ComponentsModule
+    ComponentsModule,
+    MatIcon
   ],
   exports: [IndexComponent],
 })

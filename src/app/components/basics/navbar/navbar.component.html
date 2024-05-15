@@ -5,7 +5,7 @@
       <mat-nav-list>
           <a mat-list-item (click)="changeCondition('default')">
               <mat-icon>home</mat-icon> Inicio
-            </a>
+          </a>
           <!-- <a mat-list-item (click)="changeCondition('case1')">
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                 class="bi bi-person-check-fill" viewBox="0 0 16 16">
@@ -14,11 +14,12 @@
                 <path d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
               </svg>
               Ver Horario</a> -->
-              <mat-nav-list>
-                <a mat-list-item *ngFor="let value of navItems" (click)="changeCondition('default')">
-                  {{ value }}
-                </a>
-              </mat-nav-list>              
+            <!-- El siguiente navlist es la asignación de los elemntos de la lista del navbar -->
+          <mat-nav-list> 
+            <a mat-list-item *ngFor="let value of navItems" (click)="changeCondition('default')">
+              <mat-icon aria-hidden="false" aria-label="Example home icon" [fontIcon]="value.nombre_icono"></mat-icon> {{ value.nombre }} 
+            </a>
+          </mat-nav-list>
       </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>
@@ -27,7 +28,10 @@
           *ngIf="isHandset$ | async">
           <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
         </button>
-        <span class="titulo">{{ title }}</span>
+        <img src="../../../assets/images/vistas/yavirac.png"> 
+        <span class="logo-img">
+          {{ title }}
+        </span>
       </mat-toolbar>
   
       <div class="container" [ngSwitch]="condition">
@@ -37,9 +41,11 @@
       </div>
       <div [ngSwitch]="condition">
         <div *ngSwitchCase="'case1'" class="cuadrointerior">
+          <img src="ruta_de_la_imagen.jpg" alt="Imagen">
         </div>
-          <!-- CRUD -->
+        <!-- CRUD -->
         <div *ngSwitchDefault class="cuadrointerior">
         </div>
       </div>
     </mat-sidenav-content>
+</mat-sidenav-container>
