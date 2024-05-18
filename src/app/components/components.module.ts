@@ -2,14 +2,10 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { BasicsModule } from './basics/basics.module';
 import { PopupModule } from './popup/popup.module';
-import { FormasModule } from './forms/forms.module';
+import { FormasModule } from './formas/formas.module';
 
 
 @NgModule({
-  declarations: [
-    NavbarComponent,
-  
-  ],
   imports: [
     CommonModule,
     BasicsModule,
@@ -22,4 +18,4 @@ import { FormasModule } from './forms/forms.module';
     FormasModule
   ]
 })
-export class ComponentsModule { }
+export class ComponentesModule { }

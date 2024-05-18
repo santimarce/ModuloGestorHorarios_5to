@@ -1,16 +1,17 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { IndexComponent } from './views/index/index.component';
-import { FormloginComponent } from './components/forms/formlogin/formlogin.component';
-import { FormregisterComponent } from './components/forms/formregister/formregister.component';
 import { DashboardteacherComponent } from './views/dashboardteacher/dashboardteacher.component';
-import { FormestudiantesinComponent } from './components/forms/formestudiantesin/formestudiantesin.component';
+import { FormstudentComponent } from './components/formas/formstudent/formstudent.component';
+import { IndexComponent } from './views/index/index.component';
+import { DashboardstudentComponent } from './views/dashboardstudent/dashboardstudent.component';
+import { FormloginComponent } from './components/formas/formlogin/formlogin.component';
 
 const routes: Routes = [
-  { path: 'index', component: IndexComponent },
-  { path: 'pruebas', component: DashboardteacherComponent },
-  { path: 'formestudiante', component: FormestudiantesinComponent },
-  { path: '', redirectTo: '/index', pathMatch: 'full' }
+  { path: 'index', component: DashboardteacherComponent },
+  { path: 'pruebas', component: FormloginComponent },
+  { path: 'formestudiante', component: FormstudentComponent },
+  { path: '', redirectTo: '/index', pathMatch: 'full' },
+  { path: '**', component: IndexComponent }
  
 ];
 

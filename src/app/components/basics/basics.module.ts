@@ -6,7 +6,7 @@ import { EmailinputComponent } from './emailinput/emailinput.component';
 import { SelectinputComponent } from './selectinput/selectinput.component';
 import { MatSelectModule } from '@angular/material/select';
 import { MatInputModule } from '@angular/material/input';
-import { MatFormFieldControl, MatFormFieldModule } from '@angular/material/form-field';
+import { MatFormFieldModule } from '@angular/material/form-field';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatButtonModule } from '@angular/material/button';
@@ -20,7 +20,9 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatListModule } from '@angular/material/list';
 import { NavbarComponent } from './navbar/navbar.component';
-import { CheckboxComponent } from './checkbox/checkbox.component';import { MatCardModule } from '@angular/material/card';
+import { CheckboxComponent } from './checkbox/checkbox.component';
+import { MatCardModule } from '@angular/material/card';
+import { ComponentesModule } from '../components.module';
 
 
 
@@ -31,7 +33,10 @@ import { CheckboxComponent } from './checkbox/checkbox.component';import { MatCa
     EmailinputComponent,
     SelectinputComponent,
     TextoinputComponent,
-    GrillaComponent],
+    GrillaComponent,
+    NavbarComponent,
+    CheckboxComponent
+  ],
   imports: [
     CommonModule,
     MatFormFieldModule,
@@ -44,6 +49,11 @@ import { CheckboxComponent } from './checkbox/checkbox.component';import { MatCa
     FormsModule,
     ReactiveFormsModule,
     MatGridListModule,
+    MatTabsModule,
+    MatSidenavModule,
+    MatToolbarModule,
+    MatListModule,
+    MatCardModule,
     
   ],
   exports: [
@@ -52,7 +62,9 @@ import { CheckboxComponent } from './checkbox/checkbox.component';import { MatCa
     DatepickerinputComponent,
     EmailinputComponent,
     SelectinputComponent,
-    GrillaComponent
+    GrillaComponent,
+    NavbarComponent,
+    CheckboxComponent
 
   ]
 })

@@ -1,11 +1,12 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { FormControl, FormGroup } from '@angular/forms';
 
 @Component({
-  selector: 'app-formestudiantesin',
-  templateUrl: './formestudiantesin.component.html',
-  styleUrls: ['./formestudiantesin.component.css'],
+  selector: 'app-formstudent',
+  templateUrl: './formstudent.component.html',
+  styleUrl: './formstudent.component.css'
 })
-export class FormestudiantesinComponent implements OnInit {
+export class FormstudentComponent {
 
   estudianteForm: FormGroup;
 

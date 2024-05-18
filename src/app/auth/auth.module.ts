@@ -14,6 +14,11 @@ import { ForgotpswComponent } from './forgotpsw/forgotpsw.component';
   ],
   imports: [
     CommonModule
+  ],
+  exports: [
+    LoginComponent,
+    RegisterComponent,
+    ForgotpswComponent
   ]
 })
 export class AuthModule { }

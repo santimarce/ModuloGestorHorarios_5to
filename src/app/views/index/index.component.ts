@@ -20,7 +20,6 @@ export class IndexComponent {
   horario = horariomatutino1;
   colorbtn = 'primary';
   title_button = 'Iniciar Sesion';
- 
 
 }
 

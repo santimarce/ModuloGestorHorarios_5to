@@ -1,5 +1,5 @@
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
-import { Component, inject, Input } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { map, Observable, shareReplay } from 'rxjs';
 import { ElementoListaNavbar } from '../../../../models/drawclass';
 

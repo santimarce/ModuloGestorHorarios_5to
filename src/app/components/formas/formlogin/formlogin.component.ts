@@ -1,8 +1,6 @@
 import { Component, Input } from '@angular/core';
-import { FormControl, FormGroup, Validators } from '@angular/forms';
-import { ReactiveFormsModule } from '@angular/forms';
 import { TranferenciacomponentesService } from '../../../servicios/tranferenciacomponentes.service';
-
+import { FormGroup, FormControl, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-formlogin',
@@ -25,6 +23,7 @@ export class FormloginComponent {
     mail: new FormControl('', Validators.required),
     pswrd: new FormControl('', Validators.required),
   });
+
 }
 export interface DataIn {
   title: string;
