@@ -18,7 +18,6 @@ import { MatIcon } from '@angular/material/icon';
   imports: [
     CommonModule,
     MatCardModule,
-    ComponentsModule,
     MatIcon
   ],
   exports: [IndexComponent],

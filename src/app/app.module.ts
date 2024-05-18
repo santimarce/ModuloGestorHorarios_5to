@@ -6,19 +6,19 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { provideClientHydration } from '@angular/platform-browser';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
-import { ComponentsModule } from './components/components.module';
 import { ViewsModule } from './views/views.module';
-
+import { ComponentsModule } from './components/components.module';
+import { PasswordinputComponent } from './components/basics/passwordinput/passwordinput.component';
+import { FormestudiantesinComponent } from './components/forms/formestudiantesin/formestudiantesin.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ViewsModule,
-    ComponentsModule,
     MatIconModule // Agrega esta línea para importar MatIconModule
   ],
   providers: [

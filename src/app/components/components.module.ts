@@ -7,6 +7,8 @@ import { FormasModule } from './forms/forms.module';
 
 @NgModule({
   declarations: [
+    NavbarComponent,
+  
   ],
   imports: [
     CommonModule,

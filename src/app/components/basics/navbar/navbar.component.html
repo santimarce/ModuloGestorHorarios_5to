@@ -1,6 +1,15 @@
 <mat-sidenav-container class="sidenav-container">
   <mat-sidenav #drawer class="sidenav" fixedInViewport [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
-      [mode]="(isHandset$ | async) ? 'over' : 'side'" [opened]="(isHandset$ | async) === false">
+      [mode]="(isHandset$ | async) ? 'over' : 'side'" [opened]="(isHandset$ | async) === false">     
+     <!-- aquí empieza la imagen y el correo  -->
+      <mat-card>
+        <img src="../../../assets/images/vistas/IYAVIRAC.jpeg" alt="Foto">
+      </mat-card>
+      <mat-card>
+        <mat-form-field>
+          <input matInput type="email" placeholder="@yavirac.edu.ec">
+        </mat-form-field>
+      </mat-card> 
       <mat-toolbar>Menu</mat-toolbar>
       <mat-nav-list>
           <a mat-list-item (click)="changeCondition('default')">
@@ -28,7 +37,8 @@
           *ngIf="isHandset$ | async">
           <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
         </button>
-        <img src="../../../assets/images/vistas/yavirac.png"> 
+        <img src="../../../assets/images/vistas/yaviracc.jpeg" >
+
         <span class="logo-img">
           {{ title }}
         </span>

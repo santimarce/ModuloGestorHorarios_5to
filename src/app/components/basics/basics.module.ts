@@ -20,7 +20,9 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatListModule } from '@angular/material/list';
 import { NavbarComponent } from './navbar/navbar.component';
-import { CheckboxComponent } from './checkbox/checkbox.component';
+import { CheckboxComponent } from './checkbox/checkbox.component';import { MatCardModule } from '@angular/material/card';
+
+
 
 @NgModule({
   declarations: [
@@ -29,10 +31,7 @@ import { CheckboxComponent } from './checkbox/checkbox.component';
     EmailinputComponent,
     SelectinputComponent,
     TextoinputComponent,
-    GrillaComponent,
-    NavbarComponent,
-    CheckboxComponent
-  ],
+    GrillaComponent],
   imports: [
     CommonModule,
     MatFormFieldModule,
@@ -45,10 +44,6 @@ import { CheckboxComponent } from './checkbox/checkbox.component';
     FormsModule,
     ReactiveFormsModule,
     MatGridListModule,
-    MatTabsModule,
-    MatToolbarModule,
-    MatListModule,
-    MatSidenavModule,
     
   ],
   exports: [
@@ -57,9 +52,8 @@ import { CheckboxComponent } from './checkbox/checkbox.component';
     DatepickerinputComponent,
     EmailinputComponent,
     SelectinputComponent,
-    GrillaComponent,
-    NavbarComponent,
-    CheckboxComponent
+    GrillaComponent
+
   ]
 })
 export class BasicsModule { }
