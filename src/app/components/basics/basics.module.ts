@@ -23,6 +23,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { CheckboxComponent } from './checkbox/checkbox.component';
 import { MatCardModule } from '@angular/material/card';
 import { ComponentesModule } from '../components.module';
+import { UsercardComponent } from './usercard/usercard.component';
 
 
 
@@ -35,7 +36,8 @@ import { ComponentesModule } from '../components.module';
     TextoinputComponent,
     GrillaComponent,
     NavbarComponent,
-    CheckboxComponent
+    CheckboxComponent,
+    UsercardComponent
   ],
   imports: [
     CommonModule,
@@ -54,6 +56,8 @@ import { ComponentesModule } from '../components.module';
     MatToolbarModule,
     MatListModule,
     MatCardModule,
+  
+    
     
   ],
   exports: [
@@ -64,7 +68,8 @@ import { ComponentesModule } from '../components.module';
     SelectinputComponent,
     GrillaComponent,
     NavbarComponent,
-    CheckboxComponent
+    CheckboxComponent,
+    UsercardComponent
 
   ]
 })

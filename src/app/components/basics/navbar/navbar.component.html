@@ -2,14 +2,15 @@
   <mat-sidenav #drawer class="sidenav" fixedInViewport [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
       [mode]="(isHandset$ | async) ? 'over' : 'side'" [opened]="(isHandset$ | async) === false">     
      <!-- aquí empieza la imagen y el correo  -->
-      <mat-card>
+      <!-- <mat-card>
         <img src="../../../assets/images/vistas/IYAVIRAC.jpeg" alt="Foto">
       </mat-card>
       <mat-card>
         <mat-form-field>
           <input matInput type="email" placeholder="@yavirac.edu.ec">
         </mat-form-field>
-      </mat-card> 
+      </mat-card>  -->
+      <app-usercard></app-usercard>
       <mat-toolbar>Menu</mat-toolbar>
       <mat-nav-list>
           <a mat-list-item (click)="changeCondition('default')">

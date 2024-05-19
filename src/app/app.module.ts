@@ -9,10 +9,10 @@ import { ViewsModule } from './views/views.module';
 import { ComponentesModule } from './components/components.module';
 import { AuthModule } from './auth/auth.module';
 
+
 @NgModule({
   declarations: [
-    AppComponent,
-    
+    AppComponent,    
   ],
   imports: [
     BrowserModule,

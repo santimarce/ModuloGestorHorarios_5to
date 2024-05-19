@@ -5,6 +5,7 @@ import { FormstudentComponent } from './components/formas/formstudent/formstuden
 import { IndexComponent } from './views/index/index.component';
 import { DashboardstudentComponent } from './views/dashboardstudent/dashboardstudent.component';
 import { FormloginComponent } from './components/formas/formlogin/formlogin.component';
+import { UsercardComponent } from './components/basics/usercard/usercard.component';
 
 const routes: Routes = [
   { path: 'index', component: DashboardteacherComponent },
@@ -12,6 +13,7 @@ const routes: Routes = [
   { path: 'formestudiante', component: FormstudentComponent },
   { path: '', redirectTo: '/index', pathMatch: 'full' },
   { path: '**', component: IndexComponent }
+ 
  
 ];
 

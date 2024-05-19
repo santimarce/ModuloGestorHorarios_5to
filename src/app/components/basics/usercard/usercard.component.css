@@ -1,0 +1,7 @@
+img {
+    max-width: 75px; /* Ajusta el ancho */
+    max-height: 75px; /* Ajusta la altura */
+    object-fit: cover;  /* Cubre el contenedor por completo */
+    margin: 20px; /* Margen alrededor de la imagen */
+    padding: 10px; /* Relleno dentro de la imagen */
+  }
