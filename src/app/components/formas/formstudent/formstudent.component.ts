@@ -1,20 +1,24 @@
 import { Component } from '@angular/core';
-import { FormControl, FormGroup } from '@angular/forms';
+import { FormControl, FormGroup} from '@angular/forms';
+
 
 @Component({
   selector: 'app-formstudent',
   templateUrl: './formstudent.component.html',
   styleUrl: './formstudent.component.css'
+  
 })
 export class FormstudentComponent {
 
   estudianteForm: FormGroup;
-
+  
   constructor() {
     this.estudianteForm = new FormGroup({
       cedula: new FormControl(''),
       nombre: new FormControl(''),
-      apellido: new FormControl('')
+      apellido: new FormControl(''),
+     
+    
     });
   }
 

@@ -7,6 +7,9 @@ import { ReactiveFormsModule, FormsModule, FormControl, FormGroup } from '@angul
 import { MatFormFieldModule, MatLabel } from '@angular/material/form-field';
 import { MatIconModule } from '@angular/material/icon';
 import { BasicsModule } from '../basics/basics.module';
+import { MatDatepicker, MatDatepickerToggle } from '@angular/material/datepicker';
+import { MatOption, MatSelect } from '@angular/material/select';
+
 
 @NgModule({
   declarations: [
@@ -20,7 +23,11 @@ import { BasicsModule } from '../basics/basics.module';
     MatIconModule,
     MatFormFieldModule,
     ReactiveFormsModule,
-    MatLabel
+    MatLabel,
+    MatDatepicker,
+    MatSelect,
+    MatOption,
+    MatDatepickerToggle
   ],
   exports: [
     FormloginComponent,
