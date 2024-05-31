@@ -1,0 +1,20 @@
+<h3>Ingresar Nuevo Docente</h3>
+<form [formGroup]="docenteForm" (ngSubmit)="onSubmit()">
+    <div class="contenedor-formulario">
+      <app-textoinput title="Cédula" colorinp="primary"></app-textoinput>     
+      <app-textoinput title="Nombre" colorinp="primary"></app-textoinput>
+      <app-textoinput title="Apellido" colorinp="primary"></app-textoinput>
+      <app-datepickerinput title="Fecha Nacimiento"></app-datepickerinput>
+      <app-textoinput title="Contacto" colorinp="primary"></app-textoinput>
+      <app-textoinput title="Dirección" colorinp="primary"></app-textoinput>
+      <app-emailinput title="Email"></app-emailinput>
+      <app-textoinput title="Contraseña" colorinp="primary"></app-textoinput>
+      <app-selectinput title="Rama" colorinp="primary"></app-selectinput>
+      <app-selectinput title="Facultad" colorinp="primary"></app-selectinput>
+      <app-selectinput title="Estado" colorinp="primary"></app-selectinput>
+      <app-selectinput title="Rol" colorinp="primary"></app-selectinput>
+      <app-botonsimple title="Guardar" colorbtn="primary"></app-botonsimple>
+      <app-botonsimple title="Cancelar" colorbtn="warn"></app-botonsimple>         
+    </div>
+  </form> 
+  

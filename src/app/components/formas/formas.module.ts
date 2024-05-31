@@ -9,13 +9,15 @@ import { MatIconModule } from '@angular/material/icon';
 import { BasicsModule } from '../basics/basics.module';
 import { MatDatepicker, MatDatepickerToggle } from '@angular/material/datepicker';
 import { MatOption, MatSelect } from '@angular/material/select';
+import { FormdocentesComponent } from './formdocentes/formdocentes.component';
 
 
 @NgModule({
   declarations: [
     FormloginComponent,
     FormregisterComponent,
-    FormstudentComponent
+    FormstudentComponent,
+    FormdocentesComponent
   ],
   imports: [
     CommonModule,
